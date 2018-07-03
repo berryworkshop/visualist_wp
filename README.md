@@ -17,8 +17,10 @@ Then, in development, you should be able to launch `http://localhost:8080` to vi
 
 - [server setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
 - [git setup](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04)
-- [docker setup](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04) (up through Step 4.)
+- [docker setup](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
+  Up through Step 4.
 - [docker compose setup](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-14-04)
 - [WordPress setup](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-and-phpmyadmin-with-docker-compose-on-ubuntu-14-04)
+  I departed from some of the specific example stuff.
 
 Data is installed in `/srv`.
