@@ -24,3 +24,16 @@ Then, in development, you should be able to launch `http://0.0.0.0` to view Word
   I departed from some of the specific example stuff.
 
 Data is installed in `/srv`.
+
+
+## Database dump
+
+``` bash
+DATE=`date +%Y-%m-%dT%H:%M:%S%z` && \
+  docker run -it --rm \
+  --volumes-from visualist_wp_wordpress_1 \
+  --network container:visualist_wp_wordpress_1 \
+  wordpress:cli \
+  db export /var/www/html/wp-content/exports/visualist_wp-$DATE.sql
+```
+

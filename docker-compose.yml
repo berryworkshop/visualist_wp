@@ -4,7 +4,7 @@ services:
   db:
     image: mariadb:10.3
     volumes:
-      - ./db-data:/var/lib/mysql
+      - db-data:/var/lib/mysql
     restart: always
     env_file: .env
     environment:
@@ -18,7 +18,7 @@ services:
       - db
     image: wordpress:4.9-php7.2
     ports:
-      - 80:80
+      - 8080:80
       - 443:443
     restart: always
     env_file: .env
@@ -26,7 +26,10 @@ services:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
     volumes:
-      - ./wp-content:/var/www/html/wp-content 
+      - ./wp-content/plugins:/var/www/html/wp-content/plugins
+      - ./wp-content/themes:/var/www/html/wp-content/themes
+      - ./wp-content/exports:/var/www/html/wp-content/exports
+      - wp-data:/var/www/html
     networks:
       - back
 
@@ -43,7 +46,8 @@ services:
     networks:
       - back
 
-# volumes:
-#   db-data:
+volumes:
+  db-data:
+  wp-data:
 networks:
   back:
