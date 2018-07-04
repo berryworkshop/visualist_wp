@@ -22,6 +22,7 @@ Then, in development, you should be able to launch `http://0.0.0.0` to view Word
 - [docker compose setup](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-14-04)
 - [WordPress setup](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-and-phpmyadmin-with-docker-compose-on-ubuntu-14-04)
   I departed from some of the specific example stuff.
+- [Digital Ocean spaces setup](https://www.digitalocean.com/community/tutorials/how-to-create-a-digitalocean-space-and-api-key)
 
 Data is installed in `/srv`.
 

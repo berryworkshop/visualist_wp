@@ -18,7 +18,7 @@ services:
       - db
     image: wordpress:4.9-php7.2
     ports:
-      - 80:80
+      - 8080:80
       - 443:443
     restart: always
     env_file: .env
@@ -29,6 +29,7 @@ services:
       - ./wp-content/plugins:/var/www/html/wp-content/plugins
       - ./wp-content/themes:/var/www/html/wp-content/themes
       - ./wp-content/exports:/var/www/html/wp-content/exports
+      - ./wp-content/uploads:/var/www/html/wp-content/uploads
       # - wp-data:/var/www/html
     networks:
       - back
