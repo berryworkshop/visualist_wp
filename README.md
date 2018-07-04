@@ -10,7 +10,7 @@ You will need Docker installed and ready.
 docker-compose up
 ```
 
-Then, in development, you should be able to launch `http://localhost:8080` to view WordPress in all its glory.
+Then, in development, you should be able to launch `http://localhost` to view WordPress in all its glory.
 
 
 ## DigitalOcean
